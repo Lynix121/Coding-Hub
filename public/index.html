@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Hub School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Coding Hub</div>
+
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#admission">Admission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Coding Hub School</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+            <a href="#admission" class="btn">Apply for Admission</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <h2 class="heading">About Our School</h2>
+
+        <p class="about-text">
+            Coding Hub School provides quality education in a friendly
+            and supportive environment. Our aim is to develop knowledge,
+            confidence, creativity and discipline in every student.
+        </p>
+    </section>
+
+    <!-- Academics -->
+    <section class="section light-bg" id="academics">
+        <h2 class="heading">Our Academics</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Primary Education</h3>
+                <p>Building strong foundations for young learners.</p>
+            </div>
+
+            <div class="card">
+                <h3>Middle Education</h3>
+                <p>Developing knowledge, skills and confidence.</p>
+            </div>
+
+            <div class="card">
+                <h3>Secondary Education</h3>
+                <p>Preparing students for future opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="section" id="facilities">
+        <h2 class="heading">Our Facilities</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Smart Classrooms</h3>
+                <p>Modern learning environment for students.</p>
+            </div>
+
+            <div class="card">
+                <h3>Computer Lab</h3>
+                <p>Practical computer education and learning.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports</h3>
+                <p>Physical activities for a healthy lifestyle.</p>
+            </div>
+
+            <div class="card">
+                <h3>Library</h3>
+                <p>A place for reading and gaining knowledge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section light-bg" id="gallery">
+        <h2 class="heading">Our School Gallery</h2>
+        <p class="section-text">
+            Explore our school activities and memorable moments.
+        </p>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/school1.jpg" alt="School building">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/school2.jpg" alt="School classroom">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/school3.jpg" alt="School activities">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/school4.jpg" alt="School campus">
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Preview -->
+    <div class="lightbox" id="lightbox">
+        <button id="closeLightbox" aria-label="Close image preview">
+            &times;
+        </button>
+        <img id="previewImage" src="" alt="Gallery preview">
+    </div>
+
+    <!-- Admission -->
+    <section class="section admission" id="admission">
+        <h2 class="heading">Admissions Are Open!</h2>
+        <p class="section-text">
+            Apply now for your child's bright future.
+        </p>
+
+        <div class="form-container">
+            <form id="admissionForm">
+                <input type="text" id="studentName"
+                    placeholder="Student Full Name" required>
+
+                <input type="text" id="fatherName"
+                    placeholder="Father's Name" required>
+
+                <input type="email" id="admissionEmail"
+                    placeholder="Email Address" required>
+
+                <input type="tel" id="phone"
+                    placeholder="Mobile Number" pattern="[0-9]{10}"
+                    maxlength="10" required>
+
+                <select id="className" required>
+                    <option value="">Select Class</option>
+                    <option value="Nursery">Nursery</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="4">Class 4</option>
+                    <option value="5">Class 5</option>
+                    <option value="6">Class 6</option>
+                    <option value="7">Class 7</option>
+                    <option value="8">Class 8</option>
+                    <option value="9">Class 9</option>
+                    <option value="10">Class 10</option>
+                </select>
+
+                <textarea id="studentAddress"
+                    placeholder="Student Address" rows="4" required></textarea>
+
+                <button type="submit" class="btn">
+                    Submit Admission Form
+                </button>
+
+                <p id="admissionStatus" class="form-status"
+                    aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section light-bg" id="contact">
+        <h2 class="heading">Contact Us</h2>
+
+        <div class="form-container">
+            <form id="contactForm">
+                <input type="text" id="name"
+                    placeholder="Your Name" required>
+
+                <input type="email" id="email"
+                    placeholder="Your Email" required>
+
+                <input type="text" id="subject"
+                    placeholder="Subject" required>
+
+                <textarea id="message"
+                    placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="formStatus" class="form-status"
+                    aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Coding Hub School</h2>
+        <p>Learn Today, Lead Tomorrow</p>
+        <p>&copy; 2026 Coding Hub School. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Hub Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <h1>Coding Hub Admin Dashboard</h1>
+
+        <h3>Welcome, <span id="adminName">Admin</span></h3>
+
+        <button onclick="logout()">Logout</button>
+
+        <p id="dashboardStatus"></p>
+
+        <h2>Website Statistics</h2>
+
+        <div class="stats">
+            <div>
+                <h3>Total Admissions</h3>
+                <h1 id="totalAdmissions">0</h1>
+            </div>
+
+            <div>
+                <h3>Total Contacts</h3>
+                <h1 id="totalContacts">0</h1>
+            </div>
+        </div>
+
+        <h2>Admission Records</h2>
+
+        <div style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Father Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Class</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="admissionsTable"></tbody>
+            </table>
+        </div>
+
+        <h2>Contact Messages</h2>
+
+        <div style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody id="contactsTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
