@@ -11,7 +11,9 @@ const db = mysql.createPool({
 
     ssl: {
         minVersion: "TLSv1.2"
-    }
+    },
+
+    enableCleartextPlugin: true
 });
 
 module.exports = db;
